@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Layout.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="header flex">
+            <div class="logo flex">
+                <img src="/logoyeni.png" alt="Alternate Text" />
+            </div>
+
+            <div class="search flex">
+                <p class="searchicon flex"><i style="color: rgba(93,93,93,1.00);font-size:16px;" class="fas fa-search"></i></p>
+                <input class="login-input" style="margin-left:3px" placeholder="1000Kitap'ta Ara" type="text" autocomplete="on" value="" />
+            </div>
+
+            <nav class="menu">
+                <a href="Home"><i class="fas fa-home flex"></i></a>
+                <a href="#"><i class="fas fa-plus flex"></i></a>
+
+                <a href="Login"><i style="color: #C80000" class="fas fa-sign-in-alt flex"></i></a>
+                <a href="#"><i class="fas fa-user-plus flex"></i></a>
+                <a href="#"><i class="fas fa-cog flex"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    @RenderBody()
+
+</body>
+</html>
