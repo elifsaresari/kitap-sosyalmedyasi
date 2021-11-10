@@ -124,7 +124,7 @@
     <Content Include="Views\Hakkında\iletisim.cshtml" />
     <Content Include="Views\Hakkında\dizinler.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\Sidebar.cshtml" />
+    <Content Include="Views\Sidebar\Sidebar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
