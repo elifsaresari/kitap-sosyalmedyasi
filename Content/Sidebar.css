@@ -1,0 +1,209 @@
+﻿.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 3.5;
+    height: 800px;
+    margin: 10px 0;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.sidebar-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    border: 1px solid rgba(224,224,224,1.00);
+    border-bottom-width: 0.05em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 5px;
+    align-items: flex-start;
+}
+
+    .sidebar-box .box {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+
+
+.sidebar-title {
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 95%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+    .box .kutu {
+        width: 16px;
+        height: 16px;
+    }
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+    .profile-card button {
+        padding: 5px 10px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        background-color: rgb(202, 202, 202);
+        border: none;
+        border-bottom-width: 0.05em;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        margin-bottom: 5px;
+        margin-right: 8px;
+        font-size: 11px;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .profile-card .profile-name {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+
+.kitap-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+    .kitap-box .yazar-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .kitap-box .point {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .kitap-box .yazar-card div {
+        margin-bottom: 3px;
+        margin-left: 10px;
+    }
+
+    .kitap-box .yazar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+.profile-photo {
+    margin-left: 15px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    border: 1px solid rgba(224,224,224,1.00);
+    border-radius: 50%;
+}
+
+.yazar-photo {
+    width: 24px;
+    height: 20px;
+    margin-right: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.kitap-photo {
+    margin-left: 15px;
+    width: 50px;
+    height: 70px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+
+.light-font {
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+}
+
+.detail-button {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    margin-right: 8px;
+    font-size: 13px;
+    font-family: Roboto, sans-serif;
+    color: rgb(93, 93, 93);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+}
+
+    .about a {
+        font-size: 13px;
+        color: rgba(93,93,93,1.00);
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        line-height: 20px;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+    .footer p {
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        color: rgba(93,93,93,1.00);
+    }

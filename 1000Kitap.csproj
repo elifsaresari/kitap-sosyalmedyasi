@@ -95,6 +95,7 @@
     <Content Include="Content\Kullanim-sartlari.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Layout.css" />
+    <Content Include="Content\Sidebar.css" />
     <Content Include="Content\Topluluk-kurallari.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -123,6 +124,7 @@
     <Content Include="Views\Hakkında\iletisim.cshtml" />
     <Content Include="Views\Hakkında\dizinler.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Sidebar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
