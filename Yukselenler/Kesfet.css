@@ -1,0 +1,90 @@
+﻿body {
+    background-color: rgb(240, 242, 245);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 20rem;
+}
+
+.kesfet-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex: 7;
+    height: 800px;
+    margin-right: 15px;
+    padding: 10px 20px;
+}
+
+
+.kesfet-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgba(224,224,224,1.00);
+    border-bottom-width: 0.05em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.kesfet-page h1 {
+    margin-left: 25px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+    .menu .menu-child {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        font-weight: 600;
+    }
+
+    .menu .menu-child:active #hidden{
+        visibility:visible;
+    }
+
+.menu-child #hidden {
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    visibility: hidden;
+}
+
+.kesfet {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    border: 1px solid rgba(224,224,224,1.00);
+    border-bottom-width: 0.05em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Enyeniler{
+    visibility:hidden;
+}
+
+#enyeni:active div .Enyeniler{
+    visibility:visible;
+}

@@ -56,6 +56,10 @@
         height: 16px;
     }
 
+    .box a{
+        font-weight:700;
+    }
+
 .profile-card {
     display: flex;
     align-items: center;
@@ -84,7 +88,7 @@
         line-height: 20px;
     }
 
-    .profile-card .profile-name {
+    .profile-card .profile-name a{
         font-size: 16px;
         line-height: 25px;
         font-weight: 700;
@@ -114,7 +118,7 @@
 
     .kitap-box .yazar-card div {
         margin-bottom: 3px;
-        margin-left: 10px;
+        margin-left: 10px;        
     }
 
     .kitap-box .yazar {
@@ -123,7 +127,13 @@
         justify-content: flex-start;
     }
 
+    .kitap-box a{
+        font-weight:700;
+    }
 
+.kitap-adi{
+    font-weight:700;
+}
 .profile-photo {
     margin-left: 15px;
     min-width: 40px;
