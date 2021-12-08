@@ -99,7 +99,8 @@
     <Content Include="Content\Kullanim-sartlari.css" />
     <Content Include="Content\Layout.css" />
     <Content Include="Content\Login.css" />
-    <Content Include="Content\Sidebar2.css" />
+    <Content Include="Content\Sidebar.css" />
+    <Content Include="Content\signin.css" />
     <Content Include="Content\Topluluk-kurallari.css" />
     <Content Include="Content\Onecikanlar1.css" />
     <Content Include="Content\Layout2.css" />
@@ -112,6 +113,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KesfetController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\SigninController.cs" />
     <Compile Include="Controllers\_Layout2Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -138,6 +140,7 @@
     <Content Include="Views\Shared\_Layout2.cshtml" />
     <Content Include="Views\Kesfet\Onecıkanlar.cshtml" />
     <Content Include="Views\Kesfet\Ilgigorenler.cshtml" />
+    <Content Include="Views\Signin\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -148,8 +151,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\GirisYap\" />
-    <Folder Include="Views\_Layout2\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

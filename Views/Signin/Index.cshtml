@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="~/Content/signin.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="form">
+        <div class="form-title">
+            <a href="Signin">Giriş Yap</a>
+        </div>
+
+        <div class="form-signin">
+            <div id="name">
+                <p id="name-label">
+                    Adınız ve Soyadınız*
+                </p>
+                <input type="text" name="name" placeholder="Adınız ve Soyadınız" />
+            </div>
+            <div id="eposta">
+                <p>
+                    E-posta Adresiniz*
+                </p>
+                <input type="text" name="name" placeholder="Adınız ve Soyadınız" />
+            </div>
+            <div id="username">
+                <p>
+                    Kullanıcı Adınız*
+                </p>
+                <input type="text" name="name" placeholder="Adınız ve Soyadınız" />
+            </div>
+            <div class="password">
+                <p>
+                    Şifreniz*
+                </p>
+                <input type="text" name="name" placeholder="Adınız ve Soyadınız" />
+            </div>
+            <div class="password">
+                <p>
+                    Şifreniz(Tekrar)*
+                </p>
+                <input type="text" name="name" placeholder="Adınız ve Soyadınız" />
+            </div>
+            <div id="cender">
+                <p>
+                    Adınız ve Soyadınız
+                </p>
+                <input type="text" name="name" placeholder="Adınız ve Soyadınız" />
+            </div>
+            <div id="birthday">
+                <p>
+                    Adınız ve Soyadınız
+                </p>
+                <input type="text" name="name" placeholder="Adınız ve Soyadınız" />
+            </div>
+            <div id="form-text"><p>Giriş yaparak ve 1000Kitap'ı kullanarak <span>1000Kitap Kullanım Şartlarını</span> ve <span style="color: #C80000">Topluluk Kurallarını</span> kabul ettiğinizi beyan etmiş olursunuz. </p></div>
+            <div><input type="button" name="name" value="" />  Kayıt Ol </div>
+        </div>
+    </div>
+    @Html.Partial("~/Views/Sidebar/Sidebar.cshtml")
+
+</div>
+
