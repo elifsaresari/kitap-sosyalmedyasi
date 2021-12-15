@@ -72,26 +72,28 @@
     }
 
     #name p {
+        padding-top: 7px;
         display: inline-block;
         font-weight: bold;
     }
 
-    #name input:focus #name-label{
-        color:red;
+
+    #name input:focus #name-label {
+        color: red;
     }
 
-    #eposta {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 1em 0;
-        padding: 0 1.5em;
-        border: 1px solid rgba(224,224,224,1.00);
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
+#eposta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    padding: 0 1.5em;
+    border: 1px solid rgba(224,224,224,1.00);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
     #eposta input {
         display: flex;
@@ -102,6 +104,7 @@
     }
 
     #eposta p {
+        padding-top: 7px;
         display: inline-block;
         font-weight: bold;
     }
@@ -128,6 +131,7 @@
     }
 
     #username p {
+        padding-top: 7px;
         display: inline-block;
         font-weight: bold;
     }
@@ -155,11 +159,12 @@
     }
 
     .password p {
+        padding-top: 7px;
         display: inline-block;
         font-weight: bold;
     }
 
-#cender {
+.cinsiyet {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -172,18 +177,48 @@
     border-bottom-right-radius: 10px;
 }
 
-    #cender input {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 35px;
-        border: 0px;
-    }
-
-    #cender p {
-        display: inline-block;
+    .cinsiyet p {
+        padding-top: 7px;
         font-weight: bold;
     }
+
+#format {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    flex: 1;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+    #format::-ms-expand {
+        display: none;
+    }
+
+.select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+    .select::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 176px;
+        cursor: pointer;
+        pointer-events: none;
+        transition: .25s all ease;
+    }
+
 
 #birthday {
     display: flex;
@@ -199,10 +234,7 @@
 }
 
     #birthday input {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 35px;
+        height: 500px;
         border: 0px;
     }
 
@@ -211,15 +243,67 @@
         }
 
     #birthday p {
+        padding-top: 7px;
         display: inline-block;
         font-weight: bold;
     }
 
-#form-text {
+    #birthday div {
+        padding: 7px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+        #birthday div select {
+            border: 0;
+            margin-right: 15px;
+        }
+
+
+
+.form-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #EBEBEB;
+    width: 100%;
+    height: 60px;
     padding: 0 1.5em;
     border: 1px solid rgba(224,224,224,1.00);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+    .form-text p {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Roboto, sans-serif;
+    }
+
+    .form-text span {
+        color: #C80000;
+    }
+
+.Kbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.Kbutton button{
+    height: 30px;
+    width: 100px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(232, 16, 16, 0.87);
 }

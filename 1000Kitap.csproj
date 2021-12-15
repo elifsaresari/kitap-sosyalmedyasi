@@ -100,7 +100,7 @@
     <Content Include="Content\Layout.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Sidebar.css" />
-    <Content Include="Content\signin.css" />
+    <Content Include="Content\Signin1.css" />
     <Content Include="Content\Topluluk-kurallari.css" />
     <Content Include="Content\Onecikanlar1.css" />
     <Content Include="Content\Layout2.css" />
