@@ -96,7 +96,8 @@
     <Content Include="Content\Iletisim.css" />
     <Content Include="Content\Ilgigorenler1.css" />
     <Content Include="Content\Kesfet1.css" />
-    <Content Include="Content\Kisiprofil.css" />
+    <Content Include="Content\Kisiprofil1.css" />
+    <Content Include="Content\Duvar.css" />
     <Content Include="Content\Kullanim-sartlari.css" />
     <Content Include="Content\Layout.css" />
     <Content Include="Content\Login.css" />
@@ -106,6 +107,8 @@
     <Content Include="Content\Topluluk-kurallari.css" />
     <Content Include="Content\Onecikanlar1.css" />
     <Content Include="Content\Layout2.css" />
+    <Content Include="Content\_Layout3.css" />
+    <Content Include="Content\İncelemeler.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -115,6 +118,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KesfetController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\SigninController.cs" />
     <Compile Include="Controllers\_Layout2Controller.cs" />
@@ -146,6 +150,10 @@
     <Content Include="Views\Signin\Index.cshtml" />
     <Content Include="Views\Person\Kisiprofil.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout3.cshtml" />
+    <Content Include="Views\Person\ındex.cshtml" />
+    <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Person\İncelemeler.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

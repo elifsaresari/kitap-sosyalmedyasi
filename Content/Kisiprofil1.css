@@ -1,0 +1,145 @@
+﻿* {
+    font-family: 'Roboto', sans-serif;
+}
+.container-duvar {
+    display: flex;
+    flex-direction: column;
+    flex:7;
+}
+
+.profile {
+    display: flex;
+    flex: 7;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    height: 540px;
+    border: 1px solid rgba(224,224,224,1.00);
+    border-bottom-width: 0.05em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 10px 0;
+    margin-right: 15px;
+}
+
+.cphoto {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    border: 0 solid rgba(224,224,224,1.00);
+    border-bottom-width: 0.05em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.profilephoto {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -67px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 0 solid rgba(224,224,224,1.00);
+    border-radius: 100px;
+}
+
+.pphoto {
+    width: 140px;
+    height: 140px;
+    background-color: yellowgreen;
+    border: 0 solid rgba(224,224,224,1.00);
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+}
+
+.profile-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.deneme {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+    .deneme button {
+        margin-right: 10px;
+        border: 0 solid;
+        border-radius: 100px;
+        background-color: rgb(202, 202, 202);
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+.person-name {
+    margin-left: 25px;
+}
+
+    .person-name p {
+        font-weight: bold;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 31px;
+    }
+
+.person-username {
+    margin-left: 25px;
+}
+
+    .person-username p {
+        font-size: 16px;
+        line-height: 25px;
+        color: rgba(93,93,93,1.00);
+    }
+
+.person-birthday {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+}
+
+    .person-birthday p {
+        color: rgba(68,68,68,1.00);
+        -webkit-line-clamp: 3;
+        line-height: 23px;
+        font-size: 15px;
+    }
+
+.person-history {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+}
+
+    .person-history p {
+        color: rgba(68,68,68,1.00);
+        -webkit-line-clamp: 3;
+        line-height: 23px;
+        font-size: 15px;
+    }
+.person-post-information{
+    margin-top:10px;
+    margin-left:23px;
+    width:400px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+}
+.person-post-information p span {
+    font-weight: 700;
+}
