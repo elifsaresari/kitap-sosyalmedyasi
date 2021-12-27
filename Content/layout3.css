@@ -1,13 +1,4 @@
-﻿* {
-    font-family: 'Roboto', sans-serif;
-}
-.container-duvar {
-    display: flex;
-    flex-direction: column;
-    flex:7;
-}
-
-.profile {
+﻿.profile {
     display: flex;
     flex: 7;
     flex-direction: row;
@@ -131,15 +122,82 @@
         line-height: 23px;
         font-size: 15px;
     }
-.person-post-information{
-    margin-top:10px;
-    margin-left:23px;
-    width:400px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-around;
+
+.person-post-information {
+    margin-top: 10px;
+    margin-left: 23px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-.person-post-information p span {
-    font-weight: 700;
+
+    .person-post-information p span {
+        font-weight: 700;
+    }
+.layout3 {
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
 }
+
+.layout3 .layout3-child {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin-right:15px;
+}
+
+    .layout3 .layout3-child a {
+        margin-bottom: 9px;
+        font-size:15px;
+    }
+
+.kitaplik:target ~ #hidden {
+    width: 100%;
+    height: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: red;
+}
+
+.duvar:target ~ #hidden1 {
+    width: 100%;
+    height: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: red;
+}
+
+.iletiler:target ~ #hidden4 {
+    width: 100%;
+    height: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: red;
+}
+
+#hidden {
+    width: 100%;
+    height: 5px;
+}
+
+#hidden1 {
+    width: 100%;
+    height: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: red;
+}
+

@@ -11,7 +11,7 @@
     display: none;
 }
 
-.container-incelemeler {
+.container-iletiler {
     display: flex;
     flex-direction: column;
     flex: 7;
@@ -34,7 +34,6 @@
     text-align: justify;
     margin-right: 15px;
     font-family: Roboto, sans-serif;
-    padding-bottom: 15px;
 }
 
     .kesfet div {
@@ -102,7 +101,7 @@
     visibility: hidden;
 }
 
-#hidden2 {
+#hidden4 {
     width: 100%;
     height: 5px;
     border-top-left-radius: 5px;
@@ -112,6 +111,6 @@
     background-color: red;
 }
 
-.incelemeler {
-    color: red;
+.iletiler{
+    color:red;
 }

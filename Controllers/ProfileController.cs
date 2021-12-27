@@ -13,5 +13,35 @@ namespace _1000Kitap.Controllers
         {
             return View();
         }
+
+        public ActionResult Kitaplik()
+        {
+            return View();
+        }
+
+        public ActionResult İncelemeler()
+        {
+            return View();
+        }
+
+        public ActionResult Alıntılar()
+        {
+            return View();
+        }
+
+        public ActionResult İletiler()
+        {
+            return View();
+        }
+
+        public ActionResult Hedefler()
+        {
+            return View();
+        }
+
+        public ActionResult Yorumlar()
+        {
+            return View();
+        }
     }
 }

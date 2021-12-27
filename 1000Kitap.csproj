@@ -89,25 +89,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\all.min.css" />
+    <Content Include="Content\Alıntılar.css" />
     <Content Include="Content\Anasayfa1.css" />
+    <Content Include="Content\Duvar1.css" />
     <Content Include="Content\Enyeniler.css" />
     <Content Include="Content\Gizlilik-politikası.css" />
     <Content Include="Content\Hakkında.css" />
+    <Content Include="Content\Hedef.css" />
     <Content Include="Content\Iletisim.css" />
     <Content Include="Content\Ilgigorenler1.css" />
     <Content Include="Content\Kesfet1.css" />
-    <Content Include="Content\Kisiprofil1.css" />
-    <Content Include="Content\Duvar.css" />
+    <Content Include="Content\Kitaplik1.css" />
     <Content Include="Content\Kullanim-sartlari.css" />
     <Content Include="Content\Layout.css" />
     <Content Include="Content\Login.css" />
-    <Content Include="Content\Profile.css" />
     <Content Include="Content\Sidebar.css" />
     <Content Include="Content\Signin.css" />
     <Content Include="Content\Topluluk-kurallari.css" />
     <Content Include="Content\Onecikanlar1.css" />
     <Content Include="Content\Layout2.css" />
-    <Content Include="Content\_Layout3.css" />
+    <Content Include="Content\layout3.css" />
+    <Content Include="Content\Yorumlar.css" />
+    <Content Include="Content\İletiler.css" />
     <Content Include="Content\İncelemeler.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -118,7 +121,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KesfetController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\SigninController.cs" />
     <Compile Include="Controllers\_Layout2Controller.cs" />
@@ -148,12 +150,14 @@
     <Content Include="Views\Kesfet\Onecıkanlar.cshtml" />
     <Content Include="Views\Kesfet\Ilgigorenler.cshtml" />
     <Content Include="Views\Signin\Index.cshtml" />
-    <Content Include="Views\Person\Kisiprofil.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
     <Content Include="Views\Shared\_Layout3.cshtml" />
-    <Content Include="Views\Person\ındex.cshtml" />
-    <Content Include="Views\Person\Index.cshtml" />
-    <Content Include="Views\Person\İncelemeler.cshtml" />
+    <Content Include="Views\Profile\Kitaplik.cshtml" />
+    <Content Include="Views\Profile\İncelemeler.cshtml" />
+    <Content Include="Views\Profile\Alıntılar.cshtml" />
+    <Content Include="Views\Profile\İletiler.cshtml" />
+    <Content Include="Views\Profile\Hedefler.cshtml" />
+    <Content Include="Views\Profile\Yorumlar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
