@@ -92,6 +92,7 @@
     <Content Include="Content\Alıntılar.css" />
     <Content Include="Content\Anasayfa1.css" />
     <Content Include="Content\Duvar1.css" />
+    <Content Include="Content\edit.css" />
     <Content Include="Content\Enyeniler.css" />
     <Content Include="Content\Gizlilik-politikası.css" />
     <Content Include="Content\Hakkında.css" />
@@ -117,11 +118,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EditController.cs" />
     <Compile Include="Controllers\HakkındaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KesfetController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Controllers\SettingsController.cs" />
     <Compile Include="Controllers\SigninController.cs" />
     <Compile Include="Controllers\_Layout2Controller.cs" />
     <Compile Include="Global.asax.cs">
@@ -158,6 +161,7 @@
     <Content Include="Views\Profile\İletiler.cshtml" />
     <Content Include="Views\Profile\Hedefler.cshtml" />
     <Content Include="Views\Profile\Yorumlar.cshtml" />
+    <Content Include="Views\Edit\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -168,6 +172,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Edi\" />
+    <Folder Include="Views\Settings\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

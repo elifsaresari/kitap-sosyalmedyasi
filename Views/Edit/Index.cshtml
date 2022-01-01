@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/edit.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="edit-container">
+        <div class="cover-edit">
+            <div class="cover-photo">
+                <img class="cphoto" src="~/cover-photo.jpg" alt="Alternate Text" />
+            </div>
+            <div class="ceditphoto">
+                <img class="cephoto" style="width:25px;height:20px;" src="~/edit2-icon.png" alt="Alternate Text" />
+            </div>
+        </div>
+        <div class="profile-buttons">
+            <div class="profilephoto">
+                <img class="pphoto" src="~/profile-photo.jpeg" alt="Alternate Text" />
+
+            </div>
+            <div class="edit-photo">
+                <img class="ephoto" style="width:25px;height:20px;" src="~/edit-icon.png" alt="Alternate Text" />
+            </div>
+
+        </div>
+
+        <div class="information">
+            <div><p style="font-weight:700;font-size:20px;">Bilgiler</p></div>
+            <div id="name">
+                <p>
+                    Adınız Ve Soyadınız*
+                </p>
+                <input type="text" name="name" value="" placeholder="Adınız Ve Soyadınız*" />
+            </div>
+
+            <div id="cinsiyet">
+                <p> Cinsiyetinizi Seçin*</p>
+                <div class="select">
+
+                    <select name="format" id="format">
+                        <option selected disabled> Cinsiyet Seçiniz </option>
+                        <option selected disabled> Cinsiyet Seçiniz</option>
+                        <option value="Kadın">Kadın</option>
+                        <option value="Erkek">Erkek</option>
+                        <a href="#"><i class="fas fa-caret-down"></i></a>
+                    </select>
+
+                </div>
+            </div>
+
+            <div id="dogumyeri">
+                <p>
+                    Doğum Yeriniz
+                </p>
+                <input type="text" name="name" value="" placeholder="İsteğe Bağlı" />
+            </div>
+
+            <div id="birthday">
+                <p>
+                    Doğum Tarihinizi Seçiniz*
+                </p>
+                <div>
+                    <select>
+                        @for (int day = 1; day < 32; day++)
+                        {
+                            <option value="day">@day</option>
+                        }
+                    </select>
+                    <select>
+
+
+                        @for (int month = 1; month < 13; month++)
+                        {
+                            <option value="month">@month</option>
+                        }
+                    </select>
+                    <select>
+                        @for (int year = 1900; year < DateTime.Today.Year + 1; year++)
+                        {
+                            <option value="year">@year</option>
+                        }
+                    </select>
+
+                </div>
+            </div>
+
+            <div id="egitim">
+                <p>
+                    Eğitiminiz
+                </p>
+                <input type="text" name="name" value="" placeholder="İsteğe Bağlı" />
+            </div>
+
+            <div id="meslek">
+                <p>
+                    Mesleğiniz
+                </p>
+                <input type="text" name="name" value="" placeholder="İsteğe Bağlı" />
+            </div>
+
+            <div id="yerlesimyeri">
+                <p>
+                    Yaşadığınız Yer
+                </p>
+                <input type="text" name="name" value="" placeholder="İsteğe Bağlı" />
+            </div>
+
+            <div id="website">
+                <p>
+                    Web Siteniz
+                </p>
+                <input type="text" name="name" value="" placeholder="İsteğe Bağlı" />
+            </div>
+        </div>
+
+        <div class="guncellebutton"><button class="gbutton">PROFİLİMİ GÜNCELLE</button></div>
+    </div>
+
+    @Html.Partial("~/Views/Sidebar/Sidebar.cshtml")
+
+</div>
+
