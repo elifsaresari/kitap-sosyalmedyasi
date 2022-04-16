@@ -1,101 +1,117 @@
-﻿
+﻿@model  _1000Kitap.Models.Register
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-<link href="~/Content/signin.css" rel="stylesheet" />
-
-<div class="container">
-    <div class="form">
-        <div class="form-title">
-            <a href="Signin">Kayıt Ol</a>
-        </div>
-
-        <div class="form-signin">
-            <div id="name">
-                <p id="name-label">
-                    Adınız ve Soyadınız*
-                </p>
-                <input type="text" name="name" placeholder="Adınız ve Soyadınız" />
-            </div>
-            <div id="eposta">
-                <p>
-                    E-posta Adresiniz*
-                </p>
-                <input type="text" name="name" placeholder="E-posta Adresiniz" />
-            </div>
-            <div id="username">
-                <p>
-                    Kullanıcı Adınız*
-                </p>
-                <input type="text" name="name" placeholder="Kullanıcı Adınız" />
-            </div>
-            <div class="password">
-                <p>
-                    Şifreniz*
-                </p>
-                <input type="text" name="name" placeholder="Şifreniz" />
-            </div>
-            <div class="password">
-                <p>
-                    Şifreniz(Tekrar)*
-                </p>
-                <input type="text" name="name" placeholder="Şifreniz(Tekrar)" />
+<link href="~/Content/kayit.css" rel="stylesheet" />
+@Html.ValidationSummary()
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="form">
+            <div class="form-title">
+                <a href="Signin">Kayıt Ol</a>
             </div>
 
-
-            <div class="cinsiyet">
-                <p> Cinsiyetinizi Seçin*</p>
-                <div class="select">
-
-                    <select name="format" id="format">
-                        <option selected disabled> Cinsiyet Seçiniz </option>
-                        <option selected disabled> Cinsiyet Seçiniz</option>
-                        <option value="Kadın">Kadın</option>
-                        <option value="Erkek">Erkek</option>
-                        <a href="#"><i class="fas fa-caret-down"></i></a>
-                    </select>
+            <div class="form-signin">
+                <div id="name">
+                    <p id="name-label">
+                        Adınız ve Soyadınız*
+                    </p>
+                    @*<input type="text" name="name" placeholder="Adınız ve Soyadınız" />*@
+                    @Html.TextBoxFor(i => i.Name, new { @placeholder = "Adınız ve Soyadınız", @class = "form-control", }) 
 
                 </div>
-            </div>
-
-            <div id="birthday">
-                <p>
-                    Doğum Tarihinizi Seçiniz*
-                </p>
-                <div>
-                    <select>
-                        @for (int day = 1; day < 32; day++)
-                        {
-                            <option value="day">@day</option>
-                        }
-                    </select>
-                    <select>
-
-
-                        @for (int month = 1; month < 13; month++)
-                        {
-                            <option value="month">@month</option>
-                        }
-                    </select>
-                    <select>
-                        @for (int year = 1900; year < DateTime.Today.Year+1; year++)
-                        {
-                            <option value="year">@year</option>
-                        }
-                    </select>
+                <div id="eposta">
+                    <p>
+                        E-posta Adresiniz*
+                    </p>
+                    @*<input type="text" name="name" placeholder="E-posta Adresiniz" />*@
+                    <div class="textarea">
+                        @Html.TextBoxFor(i => i.Email, new { @placeholder = "Email", @class = "form-control", })
+                    </div>
+                </div>
+                <div id="username">
+                    <p>
+                        Kullanıcı Adınız*
+                    </p>
+                    @* <input type="text" name="name" placeholder="Kullanıcı Adınız" />*@
+                    @Html.TextBoxFor(i => i.UserName, new { @placeholder = "Kullanıcı Adınız", @class = "form-control" })
+                </div>
+                <div class="password">
+                    <p>
+                        Şifreniz*
+                    </p>
+                    @*<input type="text" name="name" placeholder="Şifreniz" />*@
+                    @Html.TextBoxFor(i => i.Password, new { @placeholder = "Şifreniz", @class = "form-control" })
+                </div>
+                <div class="password">
+                    <p>
+                        Şifreniz(Tekrar)*
+                    </p>
+                    @*<input type="text" name="name" placeholder="Şifreniz(Tekrar)" />*@
+                    @Html.TextBoxFor(i => i.AgainPassword, new { @placeholder = "Şifreniz", @class = "form-control" })
 
                 </div>
 
-            </div>
 
-            <div class="form-text"><p>Giriş yaparak ve 1000Kitap'ı kullanarak <span>1000Kitap Kullanım Şartlarını</span> ve <span style="color: #C80000">Topluluk Kurallarını</span> kabul ettiğinizi beyan etmiş olursunuz. </p></div>
-            <div class="Kbutton"><button>Kayıt Ol</button></div>
+                <div class="cinsiyet">
+                    <p> Cinsiyetinizi Seçin*</p>
+                    <div class="select">
+
+                        <select name="format" id="format">
+                            <option selected disabled> Cinsiyet Seçiniz </option>
+                            <option selected disabled> Cinsiyet Seçiniz</option>
+                            <option value="Kadın">Kadın</option>
+                            <option value="Erkek">Erkek</option>
+                            <a href="#"><i class="fas fa-caret-down"></i></a>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div id="birthday">
+                    <p>
+                        Doğum Tarihinizi Seçiniz*
+                    </p>
+                    <div>
+                        <select>
+                            @for (int day = 1; day < 32; day++)
+                            {
+                                <option value="day">@day</option>
+                            }
+                        </select>
+                        <select>
+
+
+                            @for (int month = 1; month < 13; month++)
+                            {
+                                <option value="month">@month</option>
+                            }
+                        </select>
+                        <select>
+                            @for (int year = 1900; year < DateTime.Today.Year + 1; year++)
+                            {
+                                <option value="year">@year</option>
+                            }
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="form-text"><p>Giriş yaparak ve 1000Kitap'ı kullanarak <span>1000Kitap Kullanım Şartlarını</span> ve <span style="color: #C80000">Topluluk Kurallarını</span> kabul ettiğinizi beyan etmiş olursunuz. </p></div>
+                @*<div class="Kbutton"><button>Kayıt Ol</button></div>*@
+                <div class="Kbutton">
+                    <button class="Kbutton" type="submit">Kayıt Ol</button>
+                </div>
+            </div>
         </div>
+        @Html.Partial("~/Views/Sidebar/Sidebar.cshtml")
+
     </div>
-    @Html.Partial("~/Views/Sidebar/Sidebar.cshtml")
-
-</div>
+}
 

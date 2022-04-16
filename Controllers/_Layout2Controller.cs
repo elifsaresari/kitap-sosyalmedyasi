@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
+
 namespace _1000Kitap.Controllers
 {
     public class _Layout2Controller : Controller
